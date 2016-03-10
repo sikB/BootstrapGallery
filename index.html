@@ -21,6 +21,53 @@
 </head>
 <body>
 
+
+    <div id="wrapper">
+        <div class="overlay"></div>
+    
+        <!-- Sidebar -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+            <ul class="nav sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                       Brand
+                    </a>
+                </li>
+                <li>
+                    <a href="http://giphy.com/gifs/zQinMHnDYiNnq/html5">Home</a>
+                </li>
+                <li>
+                    <a href="http://giphy.com/gifs/10MkNwEcIp1KCc/html5">About</a>
+                </li>
+                <li>
+                    <a href="http://giphy.com/gifs/xTk9ZGNMKlwuLLCLN6/html5">Events</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/ATLTechVillage">Follow me</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+                <img src="http://www.fenero.com/wp-content/uploads/2014/12/images/menu-button.png">
+          
+            </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                                                 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center ">
@@ -33,8 +80,8 @@
      			<a class="navbar-brand" href="http://getbootstrap.com/">Bootstrap is Dope!</a>
     			</div>
     		<ul class="nav navbar-nav">
-     			 <li class="active"><a href="http://thechive.com/2013/05/10/i-wouldnt-last-5-seconds-in-bed-with-a-house-like-these-60-photos/">Future Home</a></li>
-     			 <li><a href="http://fatlace.com/hellaflush/">Go to FatLace to see more Dope Cars</a></li>
+     			 <li class="active"><a href="https://i.ytimg.com/vi/jx3G0CoZjAc/maxresdefault.jpg">Home</a></li>
+     			 <li><a href="http://fatlace.com/hellaflush/">Go to FatLace</a></li>
      			 <li><a href="http://www.speedhunters.com/tag/hellaflush/">Shhh! Its SpeedHunting season!</a></li> 
      			 <li><a href="http://gearpatrol.com/2015/02/02/8-best-car-modifications/">Top Mods for your car</a></li> 
     		</ul>
@@ -90,6 +137,10 @@
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
       <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+      <li data-target="#myCarousel" data-slide-to="5"></li>
+      <li data-target="#myCarousel" data-slide-to="6"></li>
+      <li data-target="#myCarousel" data-slide-to="7"></li>
     </ol>
 
     <!-- Wrapper for slides -->
@@ -110,6 +161,14 @@
           <p class="lead">This Benz is slammed and styled. Note the suicide doors!</p>
         </div>
       </div>
+
+       <div class="item">
+        <img src="http://fatlace.com/lacedup/wp-content/uploads/2015/08/132.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Hakosuka</h3>
+          <p class="lead">First Gen Skyline</p>
+        </div>
+      </div>
     
       <div class="item">
         <img src="http://24.media.tumblr.com/40608f0cc8ec0d62a90997b6f6ca4c3c/tumblr_n2u7yiO2co1slg5m9o4_1280.jpg" alt="Flower" width="460" height="345">
@@ -120,10 +179,34 @@
       </div>
 
       <div class="item">
-        <img src="https://s-media-cache-ak0.pinimg.com/736x/dc/93/5f/dc935fb390d1a9550119cdd2bb22474e.jpg" alt="Flower" width="460" height="345">
+        <img id="audi" src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2012/02/AmuseGT1-180.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
-          <h3>Slammed Audi</h3>
-          <p class="lead">For all the German Classic fanatics, slamming anything is possible!</p>
+          <h3>Amuse S2000</h3>
+          <p class="lead">One of my favorites</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://s-media-cache-ak0.pinimg.com/736x/76/07/9a/76079a0dfcd3880bd505f962b95fcbd3.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Supra</h3>
+          <p class="lead">Hands down one of my all time favorite. I will own this car!!</p>
+        </div>
+      </div>
+
+       <div class="item">
+        <img src="http://farm8.staticflickr.com/7438/11523310055_a9dac2002b_b.jpg" alt="Flower" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>BMW E46 M3</h3>
+          <p class="lead">This is what I drive daily. Wanna buy it?</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="http://www.stanceiseverything.com/wp-content/uploads/2012/04/cressida2.jpg" alt="Chania" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Toyota Cressida</h3>
+          <p class="lead">The one that im currently building</p>
         </div>
       </div>
   
@@ -138,11 +221,44 @@
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+
   </div>
 
+ <!--  <div class="form-group">
+      <label for="comment">Tell me what you think about these cars</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+</div> -->
+
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h3>Thoughts?</h3>
+</div><!-- /col-sm-12 -->
+</div><!-- /row -->
+<div class="row">
+<div class="col-sm-1">
+<div class="thumbnail">
+<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+</div><!-- /thumbnail -->
+</div><!-- /col-sm-1 -->
+
+<div class="col-sm-5">
+<div class="panel panel-default">
+<div class="panel-heading">
+<strong>myusername</strong> <span class="text-muted">commented 5 days ago</span>
+</div>
+<div class="panel-body">
+Super-Duper!!
+</div><!-- /panel-body -->
+</div><!-- /panel panel-default -->
+</div><!-- /col-sm-5 -->
+
+
+
+
 	</div>
-
-
+  </div>
+  </div>
 
 
 
