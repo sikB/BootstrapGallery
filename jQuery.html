@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		
+
+		$(document).ready(function(){
+			var thing = $('.thing');
+			$('button').click(function(){
+				var theTrick = $(this).attr('todo');
+				if (theTrick == 'hide') {
+					thing.hide();
+					}
+					else if(theTrick == 'show'){
+						thing.show();
+					}
+						else if(theTrick == 'toggle'){
+							thing.toggle();
+						}
+						else if(theTrick == 'HTML'){
+							thing.html('<table border="2"<tr><td>Look at me, im a row</td></tr>');
+						}
+						else if(theTrick == 'Append'){
+							thing.append('<div class = "green">I have a friend now</div>');
+						}
+						else if(theTrick == 'CSS'){
+							thing.css(
+								{'background-color': 'orange',
+								'color': 'red',
+								'font-size': '30px'
+								 });
+							}
+							else if(theTrick == 'text'){
+								thing.text('Just some new text');
+							}
+							else if(theTrick == 'each'){
+								$('button').each(function(){
+									console.log($(this).text());
+								})
+							}
+							else if(theTrick == 'addClass'){
+								thing.addClass('popper');
+							}
+							else if(theTrick == 'removeClass'){
+								thing.removeClass('popper');
+							}
+							else if(theTrick == 'animate'){
+								thing.animate({left: '250px', height: '+=150px', width: '+=150px'});
+							}
+							else if(theTrick == 'delay'){
+								thing.delay('fast');
+							}
+							else if(theTrick == 'slice'){
+								thing.slice(0,2).css({color: 'red'});
+							}
+							else if(theTrick == 'fadeOut'){
+								thing.fadeOut('slow');
+							}
+							else if(theTrick == 'fadeIn'){
+								thing.fadeIn('slow');
+							}
+							else if(theTrick == 'prepend'){
+								thing.prepend('<b>Prepending text fool </b>');
+							}
+							else if(theTrick == 'val'){
+								thing.val('poop')
+							}
+			});
+		});
+
+	</script>
+	<style>
+		.row{
+			margin-bottom: 5%;
+		}
+		.btn{
+			padding: 10px 20px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="hide">Hide</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="show">Show</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="toggle">Toggle</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="HTML">HTML</button>
+		</div></div>
+
+	<div class="row">
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="Append">Append</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="CSS">CSS</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="text">Text</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="each">Each</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="addClass">addClass</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="removeClass">removeClass</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="animate">Animate</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="delay">Delay</button>
+		</div>
+	</div>	
+	<div class="row">
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="slice">Slice</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="fadeOut">fadeOut</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="fadeIn">fadeIn</button>
+		</div>
+		<div class="col-sm-3 text-center">
+			<button class="btn btn-primary" todo="prepend">Prepend</button>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 text-center">
+			<button class="btn btn-primary" todo="value">Value</button>
+		</div>
+			</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<button class="btn btn-success thing">Do something to me!</button>
+		
+		</div>
+		</div>
+	
+		
+
+
+
+
+
+
+
+	</div>
+</body>
+</html>
