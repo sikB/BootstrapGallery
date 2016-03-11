@@ -10,6 +10,8 @@
   <link rel="stylesheet" type="text/css" href="bootstrap.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
@@ -92,43 +94,6 @@
   			</div>
 		</nav>
 		
-		<!-- <div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive" border-color="black">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-		<div class="col-lg-3 col-md-4 col-xs-6">
-			<img src="http://placehold.it/350x150" class="img-rounded img-responsive">
-		</div>
-	</div> -->
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -145,70 +110,82 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
+      
+      <div class="item active" data-toggle="modal" data-target="#myModal">
+      <a class="modal1">
         <img src="https://s-media-cache-ak0.pinimg.com/736x/1f/43/79/1f437936a68553fa090ab4770e662d51.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h3>The legendary Hachi-Roku!</h3>
           <p class="lead">A leged in Japan and with most JDM fanatics!</p>
         </div>
-      </div>
+      </div></a>
 
-      <div class="item">
+      
+      <div class="item" data-toggle="modal" data-target="#myModal">
+      <a class="modal1">
         <img src="http://40.media.tumblr.com/20d489402f4c60e81d99217c5cc5ade6/tumblr_nhzxj1hQvn1u56pwyo1_1280.jpg" alt="custom-benz" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h3>Dope Benz</h3>
           <p class="lead">This Benz is slammed and styled. Note the suicide doors!</p>
         </div>
-      </div>
+      </div></a>
 
-       <div class="item">
+       <div class="item" data-toggle="modal" data-target="#myModal">
+       <a class="modal1">
         <img src="http://fatlace.com/lacedup/wp-content/uploads/2015/08/132.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h3>Hakosuka</h3>
           <p class="lead">First Gen Skyline</p>
         </div>
-      </div>
+      </div></a>
     
-      <div class="item">
+      <div class="item" data-toggle="modal" data-target="#myModal">
+      <a class="modal1">
         <img src="http://24.media.tumblr.com/40608f0cc8ec0d62a90997b6f6ca4c3c/tumblr_n2u7yiO2co1slg5m9o4_1280.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h3>Not your grandpas Caddy</h3>
           <p class="lead">This is what we call ground-hogs. You wont see your grandparents in these.</p>
         </div>
-      </div>
+      </div></a>
 
-      <div class="item">
+      <div class="item" data-toggle="modal" data-target="#myModal">
+      <a class="modal1">
         <img id="audi" src="http://speedhunters-wp-production.s3.amazonaws.com/wp-content/uploads/2012/02/AmuseGT1-180.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h3>Amuse S2000</h3>
           <p class="lead">One of my favorites</p>
         </div>
-      </div>
+      </div></a>
 
-      <div class="item">
+      <div class="item" data-toggle="modal" data-target="#myModal">
+      <a class="modal1">
         <img src="https://s-media-cache-ak0.pinimg.com/736x/76/07/9a/76079a0dfcd3880bd505f962b95fcbd3.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h3>Supra</h3>
           <p class="lead">Hands down one of my all time favorite. I will own this car!!</p>
         </div>
-      </div>
+      </div></a>
 
-       <div class="item">
+       <div class="item" data-toggle="modal" data-target="#myModal">
+       <a class="modal1">
         <img src="http://farm8.staticflickr.com/7438/11523310055_a9dac2002b_b.jpg" alt="Flower" width="460" height="345">
         <div class="carousel-caption">
           <h3>BMW E46 M3</h3>
           <p class="lead">This is what I drive daily. Wanna buy it?</p>
         </div>
-      </div>
+      </div></a>
 
-      <div class="item">
+      <div class="item" data-toggle="modal" data-target="#myModal">
+      <a class="modal1" >
         <img src="http://www.stanceiseverything.com/wp-content/uploads/2012/04/cressida2.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h3>Toyota Cressida</h3>
           <p class="lead">The one that im currently building</p>
         </div>
-      </div>
+      </div></a>
+
+      <!-- Button trigger modal -->
+
   
     </div>
 
@@ -222,7 +199,27 @@
       <span class="sr-only">Next</span>
     </a>
 
+
+
   </div>
+
+  <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch modal
+</button> -->
+
+<div id="myModal" class="modal fade in" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+        <img src="http://www.stanceiseverything.com/wp-content/uploads/2012/04/cressida2.jpg" alt="Chania" width="460" height="345">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
  <!--  <div class="form-group">
       <label for="comment">Tell me what you think about these cars</label>
