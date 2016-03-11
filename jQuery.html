@@ -48,10 +48,13 @@
 								thing.removeClass('popper');
 							}
 							else if(theTrick == 'animate'){
-								thing.animate({left: '250px', height: '+=150px', width: '+=150px'});
+								thing.animate({left: '250px', height: '+=150px', width: '+=150px'}, 2000,
+									function(){
+										thing.removeAttr('style');	
+									});
 							}
 							else if(theTrick == 'delay'){
-								thing.delay('fast');
+								thing.slideUp(3000).delay(500).fadeIn(1000);
 							}
 							else if(theTrick == 'slice'){
 								thing.slice(0,2).css({color: 'red'});
@@ -65,8 +68,8 @@
 							else if(theTrick == 'prepend'){
 								thing.prepend('<b>Prepending text fool </b>');
 							}
-							else if(theTrick == 'val'){
-								thing.val('poop')
+							else if(theTrick == 'value'){
+								thing.val('poop');
 							}
 			});
 		});
@@ -78,6 +81,9 @@
 		}
 		.btn{
 			padding: 10px 20px;
+		}
+		.popper{
+			font-size: 40px;
 		}
 	</style>
 </head>
